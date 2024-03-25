@@ -58,12 +58,12 @@ function setup() {
     getCheckbox().addEventListener('change', toggleInputState);
     getNumberInput().addEventListener('input', (event) => {
         // 1. check the input value, if none provided, do nothing
-        if (event.target.value === '') {
-            return;
-        }
+        const inputValue = event.target.value;
+        if (inputValue !== '') {
         // 2. restart a new round of game
-        tries = event.target.value;
-        play();
+            tries = parseInt(inputValue);
+            play();
+        }
     });
 
 
