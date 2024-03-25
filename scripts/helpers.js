@@ -123,8 +123,8 @@ export function setCard() {
     cardNode.classList.toggle('hidden', true);
 
      // cancel the animation
-     cardNode.parentElement.classList.remove('flip'); // Remove 'flip' class from the parent element
-     cardNode.classList.remove('fade'); // Remove 'fade' class from the card    
+     cardNode.parentElement.classList.remove('flip'); 
+     cardNode.classList.remove('fade');  
 }
 
 export function showCard() {
@@ -135,8 +135,8 @@ export function showCard() {
     getShowBtn().toggleAttribute('disabled', true);
 
     // animate the card
-    cardNode.parentElement.classList.add('flip'); // Add 'flip' class to the parent element
-    cardNode.classList.add('fade'); // Add 'fade' class to the card
+    cardNode.parentElement.classList.add('flip'); 
+    cardNode.classList.add('fade'); 
 }
 
 export function toggleInputState(e) {
