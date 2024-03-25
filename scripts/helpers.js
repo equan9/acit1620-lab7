@@ -131,6 +131,7 @@ export function showCard() {
     /**
      * Show the answer card and disable the 'show' button
      */
+    const cardNode = getCardNode();
     getCardNode().classList.toggle('hidden', false);
     getShowBtn().toggleAttribute('disabled', true);
 
